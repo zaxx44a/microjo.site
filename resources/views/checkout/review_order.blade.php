@@ -1,7 +1,6 @@
-@extends('frontEnd.layouts.master')
+@extends('frontEnd.layouts.master1')
 @section('title','Review Order Page')
-@section('slider')
-@endsection
+
 @section('content')
     <div class="container">
         <div class="step-one">

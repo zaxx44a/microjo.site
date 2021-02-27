@@ -1,7 +1,6 @@
-@extends('frontEnd.layouts.master')
+@extends('frontEnd.layouts.master1')
 @section('title','checkOut Page')
-@section('slider')
-@endsection
+
 @section('content')
     <div class="container">
         @if(Session::has('message'))

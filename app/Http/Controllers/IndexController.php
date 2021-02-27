@@ -17,12 +17,12 @@ class IndexController extends Controller
     public function shop(){
         $products=Products_model::all();
         $byCate="";
-        return view('frontEnd.products',compact('products','byCate'));
+        return view('frontEnd.products1',compact('products','byCate'));
     }
     public function listByCat($id){
         $list_product=Products_model::where('categories_id',$id)->get();
         $byCate=Category_model::select('name')->where('id',$id)->first();
-        return view('frontEnd.products',compact('list_product','byCate'));
+        return view('frontEnd.products1',compact('list_product','byCate'));
     }
     public function detialpro($id){
         $detail_product=Products_model::findOrFail($id);
